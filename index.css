@@ -1,0 +1,111 @@
+.inputs{
+    display: flex;
+height: 3.0625rem;
+padding: 0.9375rem 1.25rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-radius: 0.9375rem;
+border: 1px solid #DADADA;
+background: linear-gradient(180deg, #FFF 0%, #F5F5F5 100%);
+box-shadow: 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
+.Bluebtn{
+    display: flex;
+padding: 0.9375rem 1.5625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+align-self: stretch;
+border-radius: 0.625rem;
+background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+color: #FFF;
+border: 1px solid #1445C2;
+color: var(--White, #FFF);
+font-family: "Uncut Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.025rem;
+}
+.Bluebtn:hover{
+    display: flex;
+    border: 1px solid #1445C2;
+    color: #1445C2;
+    background: none;
+}
+.texts{
+    align-self: stretch;
+    color: var(--Black, #000);
+font-family: "Uncut Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.03375rem;
+}
+.info-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.info-icon {
+  cursor: pointer;
+  color: #007bff;
+  border: 1.5px solid #007bff;
+  border-radius: 50%;        /* Perfect circle */
+  width: 18px;               /* Fix width */
+  height: 18px;              /* Fix height */
+  display: inline-flex;      /* Flex to center content */
+  align-items: center;       /* Vertically center "i" */
+  justify-content: center;   /* Horizontally center "i" */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  user-select: none;
+  font-size: 14px;
+  line-height: 1;            /* Reset line height */
+  padding: 0;                /* Remove padding */
+}
+
+
+.tooltip-text {
+  visibility: hidden;
+  width: 260px;
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  text-align: left;
+  border-radius: 5px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* above the icon */
+  left: 60%;
+  margin-left: 50px;
+  transform: translateX(-50%);
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* so tooltip doesn't interfere with hover */
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* arrow below tooltip */
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+}
+
+.info-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
