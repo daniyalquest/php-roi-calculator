@@ -21,10 +21,6 @@ A simple PHP web application to calculate and visualize the future value of inve
 - `index.php` - Main application logic and UI
 - `index.css` - Custom styles for the form and layout
 
-## Example
-
-![Screenshot](https://user-images.githubusercontent.com/your-screenshot.png)
-
 ## Requirements
 
 - PHP 7.0 or higher
