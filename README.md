@@ -25,7 +25,3 @@ A simple PHP web application to calculate and visualize the future value of inve
 
 - PHP 7.0 or higher
 - A web server (e.g., Apache with XAMPP)
-
-## License
-
-MIT License
